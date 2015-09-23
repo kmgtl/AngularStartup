@@ -1,10 +1,19 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="logincomponent">
 <head>
-    <title></title>
+    <title>Login Component</title>
 	<meta charset="utf-8" />
+    <script src="bower_components/angular/angular.min.js"></script>
 </head>
-<body>
-
+<body >
+    <div ng-controller="loginctrl">
+        User name:<br>
+        <input type="text" name="username" ng-model="loginDetails.name">
+        <br>
+        User password:<br>
+        <input type="password" name="psw" ng-model="loginDetails.password">
+        <button ng-click="onSubmitClicked()">Submit</button>
+    </div>
 </body>
+<script src="js/main.js"></script>
 </html>
